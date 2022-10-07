@@ -321,6 +321,8 @@ html {
   display: inline-block;
   margin-top: 15px;
   color: white;
+  cursor: pointer;
+  border: none !important;
 }
 
 .places-buy-btn:hover {
@@ -462,7 +464,13 @@ html {
     border: 1px solid #000;
     padding: 10px 16px;
     float: right;
+    cursor: pointer;
+    
     /* outline: none; */
+}
+.contact-form .form-submit-btn:hover {
+  color: #000;
+    background-color: #ccc;
 }
 .contact-all{
     background-color: #fff;
@@ -487,4 +495,46 @@ margin-right: 7px;
 .ti-email::before {
     content: "";
     margin-right:7px;
+}
+/* Map secsion */
+.map-secsion img{
+  width: 100%;
+    height: auto;
+}
+.w3-image {
+  max-width: 100%;
+  height: auto;
+}
+img {
+  vertical-align: middle;
+}
+.social-list{
+  text-align: center;
+}
+
+#footer{
+  padding: 64px 16px;
+  text-align: center;
+  font-size:24px;
+}
+.social-list a {
+  color: rgba(0,0,0, 0.6);
+  text-decoration: none;
+}
+.social-list a:hover{
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.coppy-right{
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.coppy-right a{
+  color: rgba(0, 0, 0, 0.6);
+}
+.coppy-right-me{
+  margin-top: 8px;
+  font-size:12px;
+  color: rgba(0, 0, 0, 0.6);
+  font-style: italic;
 }
