@@ -53,6 +53,7 @@
 
 html {
   font-family: Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth; /* hiệu ứng cuộn trang */
 }
 
 #header {
