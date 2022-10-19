@@ -10,6 +10,7 @@
       <div class=""></div>
     </div>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/icon/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -20,7 +21,7 @@
             <li><a href="#band">Band</a></li>
             <li><a href="#tour">Tour</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li width="100%"><a href="">
+            <li width="100%"><a href="#">
                 More
                 <i class="ti-angle-down"></i>
             </a>
@@ -31,9 +32,15 @@
                </ul>
             </li>
         </ul>
+        <!-- mobile menu  -->
+        <div id="mobile-menu" class="mobile-menu-btn">
+            <i class="menu-icon ti-menu"></i>
+        </div>
+        <!-- search btn -->
         <div class="search-btn">
             <i class=" search-icon ti-search"></i>
         </div>
+       
     </div>
     <div id="slider">
         <div class="text-content" width="100%">
@@ -54,17 +61,17 @@
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
          <div class="row member-list">
-            <div class="col col-third text-center">
+            <div class="col col-third s-col-full mt-32 text-center">
                 <p class="member-name">Name</p>
-                <img src="./assets/img/bandteam/bandmember.jpg" alt="Name" class="member-avt">
+                <img src="./assets/img/bandteam/bandmember.jpg" style="width:60%" alt="Name" class="member-avt">
             </div>
-            <div class="col col-third text-center">
+            <div class="col col-third s-col-full mt-32 text-center">
                     <p class="member-name">Name</p>
-                    <img src="./assets/img/bandteam/bandmember.jpg" alt="Name" class="member-avt">
+                    <img src="./assets/img/bandteam/bandmember.jpg" style="width:60%" alt="Name" class="member-avt">
              </div>
-             <div class="col col-third text-center ">
+             <div class="col col-third s-col-full mt-32 text-center ">
                         <p class="member-name">Name</p>
-                        <img src="./assets/img/bandteam/bandmember.jpg" alt="Name" class="member-avt">
+                        <img src="./assets/img/bandteam/bandmember.jpg" style="width:60%" alt="Name" class="member-avt">
              </div>
          </div>
          </div>
@@ -81,7 +88,7 @@
                 </ul>
                 <!-- places -->
                 <div class="row places-list">
-                    <div class="col col-third">
+                    <div class="col col-third s-col-full mt-16">
                         <img src="./assets/img/places/newyork.jpg" alt="" class="places-img">
                         <div class="places-body">
                             <h3 class="places-heading">New York</h3>
@@ -91,7 +98,7 @@
                         </div>
                     </div>
                     <div class="places-list">
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/places/paris.jpg" alt="" class="places-img">
                             <div class="places-body">
                                 <h3 class="places-heading">Paris</h3>
@@ -101,7 +108,7 @@
                             </div>
                         </div>
                         <div class="places-list">
-                            <div class="col col-third">
+                            <div class="col col-third s-col-full mt-16 ">
                                 <img src="assets/img/places/sanfran.jpg" class="places-img">
                                 <div class="places-body">
                                     <h3 class="places-heading">San Francisco</h3>
@@ -170,36 +177,41 @@ event.stopPropagation()
     })
     </script>
     <!-- Contact section -->
-    <div id="contact" class="content-section-bootom">
+    <div id="contact" class="content-section">
         <h2 class="section-heading">CONTACT</h2>
-        <p class="section-subheading">Fan? Drop a note!</p>
+        <p class="section-sub-heading">Fan? Drop a note!</p>
+    
         <div class="row contact-content">
-            <div class="col col-half contact-info">
-                <p><i class="ti-location-pin">Chicago, US</i></p>
-                <p><i class="ti-mobile">Phone: +00 151515</i></p>
-                <p><i class="ti-email">Email: duythanhlieu@mail.com</i></p>
+            <div class="col col-half s-col-full contact-info">
+                <p><i class="ti-location-pin"></i>Chicago, US</p>
+                <p>
+                    <i class="ti-mobile"></i>Phone:
+                    +00 151515
+                </p>
+                <p>
+                    <i class="ti-email"></i>Email:
+                    duythanhlieu@mail.com
+                </p>
             </div>
-            <div class="col col-half contact-form">
+            <div class="col col-half s-col-full contact-form">
                 <form action="">
-                    <div class="row ">
-                        <div class="col col-half">
-                            <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                    <div class="row">
+                        <div class="col col-half s-col-full">
+                            <input type="text" name="" id="" required placeholder="Name" class="form-control" />
                         </div>
-                        <div class="col col-half">
-                            <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                        <div class="col col-half s-col-full s-mt-8">
+                            <input type="email" name="" id="" required placeholder="Email" class="form-control" />
                         </div>
                     </div>
                     <div class="row mt-8">
                         <div class="col col-full">
-                            <input type="email" name="" placeholder="Message" required id="" class="form-control">
+                            <input type="text" name="" placeholder="Message" id="" required class="form-control" />
                         </div>
-    
                     </div>
-                    <input class=" form-submit-btn mt-16" type="submit" value="SEND">
+                    <input class=" contact-submit-btn btn mt-16pull-rights-full-width" type="submit" value="SEND" />
                 </form>
             </div>
-    </div>
-    </div>
+        </div>
     </div>
         <!-- end: contact section -->
         <div class="map-secsion">
@@ -218,7 +230,38 @@ event.stopPropagation()
         <p class="coppy-right-me">Coder by Liêu Duy Thanh </p>
          </div>
 
-       
+       <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+        // đống mở mobile meu
+        mobileMenu.onclick = function() 
+     {  var isClosed = header.clientHeight === headerHeight;
+        if(isClosed){
+            header.style.height = 'auto';
+        } else 
+        {
+            header.style.height = 'null';
+        }
+     }
+     // tự động đống khi chọn menu
+     var manuItems = document.querySelectorAll('#nav li a[href*="#"]');
+     for (var i = 0; i < manuItems.length; i++) {
+        var menuItem = manuItems[i];
+        
+
+        menuItem.onclick = function() {
+            var isParentMenu = this.nextElementSibling
+                && this.nextElementSibling.classList.contains('subnav');
+            if(isParentMenu) {
+                 event. preventDefault();
+        }else{
+          
+            header.style.height = null;
+        }
+     }
+    }
+       </script>
    
 </body>
 </html>

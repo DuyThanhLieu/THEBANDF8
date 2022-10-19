@@ -45,6 +45,9 @@
     margin-top:16px !important ;
 }
 
+.mt-32{
+  margin-top: 16px !important;
+}
 * {
   padding: 0;
   margin: 0;
@@ -67,14 +70,13 @@ html {
   /*bam sat qua ben phai */
   left: 0px;
   /* bam sat qua ben trai*/
+  /* overflow: hidden; */
 }
-
 #nav > li {
   display: inline-block;
 }
 
 #nav li {
-  display: inline-block;
   position: relative;
   /*cho nó dàng hàng dọc menu*/
 }
@@ -113,7 +115,13 @@ html {
   background-color: #ccc;
   z-index: 100000000;
 }
-
+#header .mobile-menu-btn{
+  position:absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+#header .mobile-menu-btn,
 #header .search-btn {
   float: right;
   padding: 0 21px;
@@ -125,7 +133,14 @@ html {
   cursor: pointer;
   /* đổi trỏ chuột khi click vào */
 }
-
+#header .mobile-menu-btn:hover .menu-icon{
+  color:#000;
+}
+#header .mobile-menu-btn:hover {
+  background-color: #ccc;
+  /* đổi trỏ chuột khi click vào */
+}
+#header .menu-icon,
 #header .search-icon {
   padding: 16px;
   font-size: 20px;
@@ -137,15 +152,7 @@ html {
   display: inline-block;
 }
 
-#header {
-  top: 0px;
-  position: fixed;
-  /* menu đung yên khi keo*/
-  right: 0px;
-  /*bam sat qua ben phai */
-  left: 0px;
-  /* bam sat qua ben trai*/
-}
+
 
 #slider {
   padding-top: 50%;
@@ -174,15 +181,19 @@ html {
   color: #fff;
 }
 
-.content-section {
+#content .content-section {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
-  padding: 64px 0px;
+  padding: 64px 0px 112px;
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 100%;
 }
 
 .section-heading {
   font-size: 30px;
+  max-width: 100%;
   font-weight: 500;
   letter-spacing: 4px;
   text-align: center;
@@ -208,7 +219,7 @@ html {
 }
 
 #content .member-list {
-  margin-top: 48px;
+  margin-top: 32px;
 }
 
 /* #content .member-item{
@@ -453,25 +464,30 @@ html {
 }
 .contact-form{
     font-size:15px;
+    
 }
 .contact-form .form-control{
     padding: 11px;
     border:1px solid #ccc;
     width:100%;
 }
-.contact-form .form-submit-btn{
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #000;
-    padding: 10px 16px;
-    float: right;
-    cursor: pointer;
-    
+.btn{
+      color: #fff;
+        background-color: #000;
+        text-decoration: none;
+        padding: 11px 16px;
+        display: inline-block;
+        margin-top: 15px;
+        border: none;
+        text-align: center;
+        -webkit-appearance: none;
+        float: right;
     /* outline: none; */
 }
-.contact-form .form-submit-btn:hover {
+.btn:hover {
   color: #000;
     background-color: #ccc;
+    cursor: pointer;
 }
 .contact-all{
     background-color: #fff;
@@ -482,7 +498,14 @@ html {
         /* margin-left: auto;
         margin-right: auto; */
         padding: 64px 16px;  
-        margin:0px 76px;
+        margin:0px 370px;
+}
+#content .section-sub-heading {
+  font-size: 15px;
+  margin-top: 25px;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.6;
 }
 /*# sourceMappingURL=styles.css.map */
 .ti-location-pin::before {
@@ -538,4 +561,11 @@ img {
   font-size:12px;
   color: rgba(0, 0, 0, 0.6);
   font-style: italic;
+}
+/* Responsive  */
+.pc,
+.tablet,
+.mobile {
+  font-size: 68px;
+  display: none;
 }
